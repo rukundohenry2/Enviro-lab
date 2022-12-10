@@ -8,6 +8,8 @@ body .middlepart1 .menubar {
   background-color: rgb(255, 255, 255);
   padding: 10px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 body .middlepart1 .menubar .logo {
   height: 20vh;
@@ -41,4 +43,46 @@ body .middlepart1 .menubar .menusocial .socialicons {
 }
 body .middlepart1 .menubar .menusocial .socialicons a img {
   width: 25px;
+}
+body .middlepart1 .menubar .burger {
+  display: none;
+  border: #013E0C 3px solid;
+  border-radius: 4px;
+  align-self: center;
+  display: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 4px;
+  cursor: pointer;
+}
+body .middlepart1 .menubar .burger div {
+  width: 20px;
+  background-color: #0A170D;
+  height: 3px;
+  margin: 4px;
+}
+
+@media (max-width: 576px) {
+  body .middlepart1 .menubar {
+    text-align: start;
+    padding: 10px 30px 10px 30px;
+    width: -webkit-fill-available;
+  }
+  body .middlepart1 .menubar .logo {
+    height: 50px;
+    padding-bottom: 0px;
+  }
+  body .middlepart1 .menubar .menusocial .menuitems {
+    display: none;
+  }
+  body .middlepart1 .menubar .menusocial .blankdiv {
+    display: none;
+  }
+  body .middlepart1 .menubar .menusocial .socialicons {
+    display: none;
+  }
+  body .middlepart1 .menubar .burger {
+    display: block;
+  }
 }/*# sourceMappingURL=header.css.map */

@@ -8,6 +8,8 @@ body{
             background-color: rgba(255, 255, 255);
             padding: 10px;
             width: 100%;
+            display: flex;
+            justify-content: space-between;
             
             .logo{
                 height: 20vh;
@@ -44,8 +46,56 @@ body{
                         }
                     }
                 }
+                
+            }
+            .burger{
+                display: none;
+                border: #013E0C 3px solid; 
+                border-radius: 4px;
+                align-self: center;
+                display: none;
+                height: fit-content;
+                margin-right: 4px;
+                cursor: pointer;
+                div{
+                    width: 20px;
+                    background-color: #0A170D;
+                    height: 3px;
+                    margin: 4px;
+                }
             }
         }
     }
-    
+}
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    body{
+        .middlepart1{
+            .menubar{
+                text-align: start;
+                padding: 10px 30px 10px 30px ;
+                // border: #0A170D solid 2px;
+                width: -webkit-fill-available;
+                .logo{
+                    height: 50px;
+                    padding-bottom:0px ;
+                }
+                .menusocial{
+                    
+                    .menuitems{
+                        display: none;
+                    }
+                    .blankdiv{
+                        display: none;
+                    }
+                    .socialicons{
+                        display: none;
+                    }
+                }
+                .burger{
+                    display: block;
+                }
+            }
+        }
+    }
 }

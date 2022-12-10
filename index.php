@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="media/logo/logo.png">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Enviro Lab</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <?php include "header.html" ?>
         <div class="aboutsection">
             <div class="aboutdesc">
-                <h3>What we are.</h3>
+                <h1>What we are.</h1>
                 <p>Offered say visited elderly and. Waited period are played family man formed. He ye body or made on pain part meet. You one delay nor begin our folly abode. By disposed replying mr me unpacked no. As moonlight of my resolving unwilling.</p>
                 <a href="">More</a>
             </div>
@@ -26,13 +27,16 @@
         <div class="conservesection">
             <img src="media/vector/gallery.png" alt="">
             <div class="conservedesc">
-                <h3>Environmental conservation</h3>
+                <h1>Environmental conservation</h1>
                 <p>Offered say visited elderly and. Waited period are played family man formed. He ye body or made on pain part meet. You one delay nor begin our folly abode. By disposed replying mr me unpacked no. As moonlight of my resolving unwilling.</p>
                 <!-- <a href="">More</a> -->
             </div>
         </div>
     </div>
-    
+    <div class="middlepart3">
+
+    </div>
+    <?php include "footer.html" ?>
 
 </body>
 </html>

@@ -4,6 +4,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
+  scroll-behavior: smooth;
 }
 body .middlepart1 {
   height: 100vh;
@@ -25,7 +26,7 @@ body .middlepart1 .aboutsection .aboutdesc {
   height: fit-content;
   align-self: center;
 }
-body .middlepart1 .aboutsection .aboutdesc h3 {
+body .middlepart1 .aboutsection .aboutdesc h1 {
   color: #013E0C;
 }
 body .middlepart1 .aboutsection .aboutdesc a {
@@ -65,7 +66,7 @@ body .middlepart2 .conservesection .conservedesc {
   height: fit-content;
   align-self: center;
 }
-body .middlepart2 .conservesection .conservedesc h3 {
+body .middlepart2 .conservesection .conservedesc h1 {
   color: #F6931E;
 }
 body .middlepart2 .conservesection .conservedesc p {
@@ -79,4 +80,92 @@ body .middlepart2 .conservesection img {
   height: -moz-fit-content;
   height: fit-content;
   align-self: center;
+}
+body .middlepart3 {
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  body .middlepart1 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .middlepart1 .aboutsection {
+    width: 90%;
+  }
+  body .middlepart1 .aboutsection .aboutdesc {
+    width: 45%;
+  }
+  body .middlepart1 .aboutsection img {
+    width: 50%;
+  }
+  body .middlepart2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .middlepart2 .conservesection {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+  }
+  body .middlepart2 .conservesection .conservedesc {
+    text-align: left;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-self: center;
+  }
+  body .middlepart2 .conservesection .conservedesc h1 {
+    color: #F6931E;
+  }
+  body .middlepart2 .conservesection .conservedesc p {
+    text-align: justify;
+    margin-left: 30px;
+    color: white;
+    margin: 0;
+  }
+  body .middlepart2 .conservesection img {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-self: center;
+  }
+  body .middlepart3 {
+    height: 100vh;
+  }
+}
+@media (max-width: 576px) {
+  body .middlepart1 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .middlepart1 .aboutsection {
+    width: 90%;
+    flex-direction: column;
+  }
+  body .middlepart1 .aboutsection .aboutdesc {
+    width: 100%;
+    order: 2;
+  }
+  body .middlepart1 .aboutsection img {
+    width: 80%;
+    align-self: center;
+    order: 1;
+  }
+  body .middlepart2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .middlepart3 {
+    height: 100vh;
+  }
 }/*# sourceMappingURL=index.css.map */
