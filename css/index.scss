@@ -1,0 +1,92 @@
+$text1color:#013E0C;
+body{
+    background-image: url("../media/Background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    .middlepart1{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .aboutsection{
+            width: 80%;
+            //border: black solid 2px;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            .aboutdesc{
+                text-align: left;
+                width: 50%;
+                height: fit-content;
+                //border: black solid 2px;
+                align-self: center;
+                h3{
+                    color: $text1color;
+                }
+                a{
+                    border: $text1color 2px solid;
+                    text-decoration: none;
+                    border-radius: 10%;
+                    padding: 2px 8px 2px 8px ;
+                    background-color: $text1color;
+                    color: white;
+                }
+                p{
+                    text-align: justify;
+                }
+            }
+            img{
+                width:35%
+            }
+        }
+    }  
+    .middlepart2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0A170D;
+        height: 100vh;
+        .conservesection{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            gap: 20px;
+            .conservedesc{
+                text-align: left;
+                width: 50%;
+                height: fit-content;
+                //border: black solid 2px;
+                align-self: center;
+                
+                h3{
+                    color: #F6931E;
+                }
+                // a{
+                //     border: $text1color 2px solid;
+                //     text-decoration: none;
+                //     border-radius: 10%;
+                //     padding: 2px 8px 2px 8px ;
+                //     background-color: $text1color;
+                //     color: white;
+                //     margin: 60px;
+                // }
+                p{
+                    text-align: justify;
+                    margin-left: 30px;
+                    color: white;
+                }
+            }
+            img{
+                width: 50%;
+                height: fit-content;
+                align-self: center;
+                
+            }
+        }
+    }   
+}
