@@ -1,4 +1,5 @@
 $text1color:#013E0C;
+$sectionbackground:#0A170D;
 body{
     background-image: url("../media/Background.png");
     background-repeat: no-repeat;
@@ -40,7 +41,7 @@ body{
                 }
             }
             img{
-                width:35%
+                width:45%
             }
         }
     }  
@@ -94,7 +95,18 @@ body{
         height: 100vh;
     }
 }
-// Medium devices (tablets, 768px and up)
+// Large devices (desktops, 992px and below)
+@media (max-width: 992px) {
+    body{
+        .middlepart1{
+            height: fit-content;
+        }
+        .middlepart2{
+            height: fit-content;
+        }
+    }
+}
+// Medium devices (tablets, 768px and below)
 @media (max-width: 768px) {
     body{
         
@@ -160,7 +172,7 @@ body{
         }
     }
 }
-// Small devices (landscape phones, 576px and up)
+// Small devices (landscape phones, 576px and below)
 @media (max-width: 576px) {
     body{
         .middlepart1{
@@ -171,6 +183,12 @@ body{
                 .aboutdesc{
                     width: 100%;
                     order: 2;
+                    h1{
+                        font-size: 1em;
+                    }
+                    p{
+                        margin-top: 0px;
+                    }
                 }
                 img{
                     width:80%;
@@ -181,14 +199,23 @@ body{
         }  
         .middlepart2{  
             height: fit-content;
+            .conservesection{
+                .conservedesc{
+                    h1{
+                        font-size: 1em;
+                    }
+                    p{
+                    }
+                }
+                
+            }
         }
         .middlepart3{
             height: 100vh;
         }
     }
 }
-// Large devices (desktops, 992px and up)
-//@media (max-width: 992px) {}
+
 
 // Extra large devices (large desktops, 1200px and up)
 // @media (max-width: 1200px) {}
