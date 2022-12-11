@@ -58,6 +58,9 @@ body{
             justify-content: space-between;
             margin: 20px;
             gap: 20px;
+            .phonegallery{
+                display: none;
+            }
             .conservedesc{
                 text-align: left;
                 width: 50%;
@@ -133,6 +136,12 @@ body{
                 flex-direction: column;
                 margin: 20px;
                 gap: 20px;
+                .gengallery{
+                    display: none;
+                }
+                .phonegallery{
+                    display: block;
+                }
                 .conservedesc{
                     text-align: left;
                     width: 100%;
