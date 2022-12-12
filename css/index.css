@@ -41,7 +41,7 @@ body .middlepart1 .aboutsection .aboutdesc p {
   text-align: justify;
 }
 body .middlepart1 .aboutsection img {
-  width: 45%;
+  width: 35%;
 }
 body .middlepart2 {
   display: flex;
@@ -86,6 +86,46 @@ body .middlepart2 .conservesection img {
 }
 body .middlepart3 {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .middlepart3 h1 {
+  color: #013E0C;
+}
+body .middlepart3 .service {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+body .middlepart3 .service .servicetab {
+  width: 30%;
+  border: #F6931E 3px solid;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+}
+body .middlepart3 .service .servicetab .servicehead {
+  color: #013E0C;
+  display: flex;
+  align-items: center;
+}
+body .middlepart3 .service .servicetab .servicehead img {
+  width: 50px;
+  height: 50px;
+}
+body .middlepart3 .service .servicetab .servicedesc {
+  text-align: justify;
+}
+body .middlepart3 a {
+  text-decoration: none;
+  border: solid #013E0C 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  color: black;
+  margin-top: 20px;
 }
 
 @media (max-width: 992px) {
@@ -95,6 +135,11 @@ body .middlepart3 {
     height: fit-content;
   }
   body .middlepart2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .middlepart3 {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
