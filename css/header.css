@@ -5,23 +5,28 @@ body {
 body .middlepart1 .menubar {
   box-shadow: 0 0 5px 1px black;
   background-color: rgb(255, 255, 255);
-  padding: 10px;
-  width: 100%;
+  width: -webkit-fill-available;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 body .middlepart1 .menubar .logo1 {
   width: 10%;
+  padding: 20px;
 }
 body .middlepart1 .menubar .logo2 {
   display: none;
 }
+body .middlepart1 .menubar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 body .middlepart1 .menubar .menusocial {
   display: flex;
   justify-content: space-around;
-  margin-top: 15px;
   width: 100%;
+  align-items: center;
 }
 body .middlepart1 .menubar .menusocial .menuitems {
   width: 60%;
@@ -46,10 +51,15 @@ body .middlepart1 .menubar .menusocial .menuitems .innerclose {
 body .middlepart1 .menubar .menusocial .blankdiv {
   width: 20%;
 }
+body .middlepart1 .menubar .menusocial .blankdiv .logo3 {
+  display: none;
+  width: 50px;
+  padding: 10px 0px 10px 10px;
+}
 body .middlepart1 .menubar .menusocial .socialicons {
   width: 20%;
   text-align: right;
-  padding-right: 20px;
+  padding: 10px 10px 10px 0px;
 }
 body .middlepart1 .menubar .menusocial .socialicons a img {
   width: 25px;
@@ -89,6 +99,16 @@ body .middlepart1 .menubar .burger div {
     display: block;
     height: 50px;
     padding-bottom: 0px;
+  }
+  body .middlepart1 .menubar .logo3 {
+    display: none;
+    height: 50px;
+    padding-bottom: 0px;
+  }
+  body .middlepart1 .menubar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
   body .middlepart1 .menubar .menusocial .menuitems {
     position: fixed;

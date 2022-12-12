@@ -6,7 +6,9 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     scroll-behavior: smooth;
     .middlepart1{
         height: 100vh;
@@ -19,13 +21,13 @@ body{
             //border: black solid 2px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             margin: 20px;
             .aboutdesc{
                 text-align: left;
                 width: 50%;
                 height: fit-content;
-                //border: black solid 2px;
-                align-self: center;
+                height: 100%;
                 h1{
                     color: $text1color;
                 }
@@ -42,7 +44,7 @@ body{
                 }
             }
             img{
-                width:35%
+                width:45%
             }
         }
     }  
@@ -88,20 +90,21 @@ body{
         }
     }
     .middlepart3{
-        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: -webkit-fill-available;
         h1{
             color: $text1color;
         }
         .service{
             width: 80%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             gap: 10px;
             .servicetab{
-                width: 30%;
+                width: 45%;
                 border:$pageorange 3px solid;
                 border-radius: 10px;
                 padding: 10px;
@@ -128,7 +131,7 @@ body{
             padding-right: 10px;
             border-radius: 10px;
             color: black;
-            margin-top: 20px;
+            margin: 10px 10px 10px 10px;
         }
     }
 }
@@ -190,15 +193,15 @@ body{
                     h1{
                         color: #F6931E;
                     }
-                    // a{
-                    //     border: $text1color 2px solid;
-                    //     text-decoration: none;
-                    //     border-radius: 10%;
-                    //     padding: 2px 8px 2px 8px ;
-                    //     background-color: $text1color;
-                    //     color: white;
-                    //     margin: 60px;
-                    // }
+                    a{
+                        border: $text1color 2px solid;
+                        text-decoration: none;
+                        border-radius: 10%;
+                        padding: 2px 8px 2px 8px ;
+                        background-color: $text1color;
+                        color: white;
+                        margin: 60px;
+                    }
                     p{
                         text-align: justify;
                         margin-left: 30px;
@@ -256,13 +259,17 @@ body{
                     h1{
                         font-size: 1em;
                     }
-                    p{
-                    }
+                    
                 }
                 
             }
         }
         .middlepart3{
+            .service{
+                width: 90%;
+                align-items: center;
+                
+            }
         }
     }
 }

@@ -8,23 +8,31 @@ body{
         .menubar{
             box-shadow:0 0 5px 1px black;
             background-color: rgba(255, 255, 255);
-            padding: 10px;
-            width: 100%;
+            //padding: 10px;
+            width: -webkit-fill-available;
             display: flex;
             align-items: center;
             flex-direction: column;
             .logo1{
                 width: 10%;
+                padding: 20px;
                 //border: black 2px solid;
             }
             .logo2{
                 display: none;
             }
+            &.sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+
+            }
+            
             .menusocial{
                 display: flex;
                 justify-content: space-around;
-                margin-top:15px ;
                 width: 100%;
+                align-items: center;
                 
                 .menuitems{
                     width: 60%;
@@ -45,14 +53,20 @@ body{
                     .innerclose{
                         display: none;
                     }
+                    
                 }
                 .blankdiv{
                     width: 20%;
+                    .logo3{
+                        display: none;
+                        width: 50px;
+                        padding: 10px 0px 10px 10px;
+                    }
                 }
                 .socialicons{
                     width: 20%;
                     text-align: right;
-                    padding-right: 20px;
+                    padding: 10px 10px 10px 0px;
                     a{
                         img{
                             width: 25px;
@@ -100,6 +114,16 @@ body{
                     height: 50px;
                     padding-bottom:0px ;
                 }
+                .logo3{
+                    display: none;
+                    height: 50px;
+                    padding-bottom:0px ;
+                }
+                &.sticky {
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                  }
                 .menusocial{
                     
                     .menuitems{

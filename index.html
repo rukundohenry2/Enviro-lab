@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="media/logo/logo.png">
+    <link rel="icon" type="image/x-icon" href="media/logo/logowhite.png">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -13,12 +13,14 @@
 <body>
     
     <div class="middlepart1">
-        <div class="menubar">
+        <div class="menubar" id="menustick">
             <img class="logo1" src="media/logo/logo.png" alt="">
             <img class="logo2" src="media/logo/logowhite.png" alt="">
-
-            <div class="menusocial">
-                <div class="blankdiv"></div>
+            
+            <div class="menusocial" id="socialmenu">
+                <div class="blankdiv">
+                    <img class="logo3" src="media/logo/logoblack.png" alt="">
+                </div>
                 <div class="menuitems" id="menuitem" onclick="toggleMobileMenu()">
                     <img class="innerlogo" src="media/logo/logo.png" alt="">
                     <a href="">HOME</a>
@@ -83,22 +85,14 @@
                 <div class="servicedesc">
                     Preparation of Environmental Social Management Plans is required for formulation, implementation and monitoring of environmental conservation measures during and after commissioning of projects. Management plans are based on resource conservation and pollution abatement considerations among other factors.                </div>
             </div>
-            <div class="servicetab">
-                <div class="servicehead">
-                    <h3>Environmental Auditing (EA)</h3>
-                    <img src="media/icons/icons8_oak_tree_96px_2.png" alt="">
-                </div>
-                <div class="servicedesc">
-                    The company does offer the service of environmental audits. These are intended to identify environmental compliance and management system implementation gaps, along with related corrective and preventive actions.                </div>
-            </div>
         </div>
-        <!-- <a href="" onclick="windowwidth();">More</a> -->
-        <button onclick="windowwidth();">More</button>
+        <a href="">More</a>
+        
     </div>
     <div class="footermenu">
         <p>&#169; This website is a property of Enviro-lab</p>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/slidingmenu.js"></script>
     <script src="js/sticky.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
 </body>

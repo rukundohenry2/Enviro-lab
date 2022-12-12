@@ -3,7 +3,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   scroll-behavior: smooth;
 }
 body .middlepart1 {
@@ -16,6 +18,7 @@ body .middlepart1 .aboutsection {
   width: 80%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 20px;
 }
 body .middlepart1 .aboutsection .aboutdesc {
@@ -24,7 +27,7 @@ body .middlepart1 .aboutsection .aboutdesc {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  align-self: center;
+  height: 100%;
 }
 body .middlepart1 .aboutsection .aboutdesc h1 {
   color: #013E0C;
@@ -41,7 +44,7 @@ body .middlepart1 .aboutsection .aboutdesc p {
   text-align: justify;
 }
 body .middlepart1 .aboutsection img {
-  width: 35%;
+  width: 45%;
 }
 body .middlepart2 {
   display: flex;
@@ -85,10 +88,10 @@ body .middlepart2 .conservesection img {
   align-self: center;
 }
 body .middlepart3 {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: -webkit-fill-available;
 }
 body .middlepart3 h1 {
   color: #013E0C;
@@ -96,11 +99,12 @@ body .middlepart3 h1 {
 body .middlepart3 .service {
   width: 80%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
 }
 body .middlepart3 .service .servicetab {
-  width: 30%;
+  width: 45%;
   border: #F6931E 3px solid;
   border-radius: 10px;
   padding: 10px;
@@ -125,7 +129,7 @@ body .middlepart3 a {
   padding-right: 10px;
   border-radius: 10px;
   color: black;
-  margin-top: 20px;
+  margin: 10px 10px 10px 10px;
 }
 
 @media (max-width: 992px) {
@@ -190,6 +194,15 @@ body .middlepart3 a {
   body .middlepart2 .conservesection .conservedesc h1 {
     color: #F6931E;
   }
+  body .middlepart2 .conservesection .conservedesc a {
+    border: #013E0C 2px solid;
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 2px 8px 2px 8px;
+    background-color: #013E0C;
+    color: white;
+    margin: 60px;
+  }
   body .middlepart2 .conservesection .conservedesc p {
     text-align: justify;
     margin-left: 30px;
@@ -242,5 +255,9 @@ body .middlepart3 a {
   }
   body .middlepart2 .conservesection .conservedesc h1 {
     font-size: 1em;
+  }
+  body .middlepart3 .service {
+    width: 90%;
+    align-items: center;
   }
 }/*# sourceMappingURL=index.css.map */
