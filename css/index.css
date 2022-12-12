@@ -203,8 +203,11 @@ body .middlepart3 a {
     height: fit-content;
     align-self: center;
   }
-  body .middlepart3 {
-    height: 100vh;
+  body .middlepart3 .service {
+    flex-direction: column;
+  }
+  body .middlepart3 .service .servicetab {
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
@@ -239,8 +242,5 @@ body .middlepart3 a {
   }
   body .middlepart2 .conservesection .conservedesc h1 {
     font-size: 1em;
-  }
-  body .middlepart3 {
-    height: 100vh;
   }
 }/*# sourceMappingURL=index.css.map */

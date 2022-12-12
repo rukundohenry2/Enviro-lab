@@ -215,7 +215,12 @@ body{
             }
         }
         .middlepart3{
-            height: 100vh;
+            .service{
+                flex-direction: column;
+                .servicetab{
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -258,7 +263,6 @@ body{
             }
         }
         .middlepart3{
-            height: 100vh;
         }
     }
 }
