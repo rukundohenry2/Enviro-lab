@@ -47,6 +47,17 @@ body{
                             color: #F6931E;
                         }
                     }
+                    .innersocialicons{
+                        display: none;
+                        width: 20%;
+                        text-align: right;
+                        padding: 10px 10px 10px 0px;
+                        a{
+                            img{
+                                width: 25px;
+                            }
+                    }
+                    }
                     .innerlogo{
                         display: none;
                     }
@@ -141,6 +152,9 @@ body{
                         transform: translate3d(-100vw,0,0);
                         transition: transform .3s cubic-bezier(0, .52,0,1);
                         overflow-x: hidden;
+                        .innersocialicons{
+                            display: flex;
+                        }
                         .innerlogo{
                             display: block;
                             width: 100px;

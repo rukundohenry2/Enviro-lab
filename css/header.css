@@ -42,6 +42,15 @@ body .middlepart1 .menubar .menusocial .menuitems a {
 body .middlepart1 .menubar .menusocial .menuitems a:hover {
   color: #F6931E;
 }
+body .middlepart1 .menubar .menusocial .menuitems .innersocialicons {
+  display: none;
+  width: 20%;
+  text-align: right;
+  padding: 10px 10px 10px 0px;
+}
+body .middlepart1 .menubar .menusocial .menuitems .innersocialicons a img {
+  width: 25px;
+}
 body .middlepart1 .menubar .menusocial .menuitems .innerlogo {
   display: none;
 }
@@ -125,6 +134,9 @@ body .middlepart1 .menubar .burger div {
     transform: translate3d(-100vw, 0, 0);
     transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
     overflow-x: hidden;
+  }
+  body .middlepart1 .menubar .menusocial .menuitems .innersocialicons {
+    display: flex;
   }
   body .middlepart1 .menubar .menusocial .menuitems .innerlogo {
     display: block;
