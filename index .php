@@ -17,7 +17,15 @@
         <div class="aboutsection">
             <div class="aboutdesc">
                 <h1>What we are.</h1>
-                <p>Offered say visited elderly and. Waited period are played family man formed. He ye body or made on pain part meet. You one delay nor begin our folly abode. By disposed replying mr me unpacked no. As moonlight of my resolving unwilling.</p>
+                <p>Envirolab Conservation Limited is a biodiversity research company in Uganda with a team of
+                    experts led by Dr. Waswa Sadic Babyesiza, with interests in conservation science, ecology and
+                    biodiversity. Envirolab works on a variety of environmental, ecological, and conservation-
+                    related issues and collaborates with numerous organizations worldwide across terrestrial,
+                    coastal, and marine ecosystems as well as across spatial scales, from regional (East Africa) to
+                    global, in order to help address pressing environmental issues, ecological, sustainability, and
+                    conservation challenges across the globe. Working with local communities and international
+                    partners, we mentor and educate the next generation of conservation scientists and
+                    practitioners in order to improve conservation that benefits communities and livelihoods.</p>
                 <a href="">More</a>
             </div>
             <img src="media/vector/imgcollection.png" alt="">

@@ -7,6 +7,7 @@ body {
   flex-direction: column;
   align-items: center;
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 body .middlepart1 {
   height: 100vh;
@@ -129,7 +130,6 @@ body .middlepart3 .services .servicetab .servicedesc {
   text-align: justify;
 }
 body .middlepart3 .services .servicetab .servicedesc ul {
-  list-style: auto;
   padding-left: 15px;
 }
 body .middlepart3 .services .servicetab .servicedesc ul li {
