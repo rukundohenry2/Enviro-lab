@@ -81,6 +81,7 @@ body .footermenu .footertabs .reachus .general p {
   margin-left: 10px;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: left;
 }
 body .footermenu .footertabs .quicklinks {
   width: 25%;
@@ -126,16 +127,29 @@ body .footermenu .footerinfo .bottomlinks a {
 }
 
 @media (max-width: 768px) {
-  .footermenu hr {
+  body .footermenu hr {
     color: white;
     width: 100%;
   }
-  .footermenu .footertabs {
+  body .footermenu .footertabs {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
-  .footermenu .footertabs .reachus {
-    width: auto;
+  body .footermenu .footertabs .reachus {
+    width: 90%;
+  }
+  body .footermenu .footertabs .newsletter {
+    width: 90%;
+  }
+  body .footermenu .footertabs .quicklinks {
+    width: 90%;
+    display: none;
+  }
+  body .footermenu .footerinfo .bottomlinks {
+    display: none;
+  }
+  body .footermenu .footerinfo .copyair {
+    display: none;
   }
 }
