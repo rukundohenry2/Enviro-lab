@@ -130,6 +130,7 @@ body .middlepart3 .services .servicetab .servicedesc {
   text-align: justify;
 }
 body .middlepart3 .services .servicetab .servicedesc ul {
+  list-style: disc;
   padding-left: 15px;
 }
 body .middlepart3 .services .servicetab .servicedesc ul li {
