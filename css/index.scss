@@ -195,11 +195,21 @@ body{
             height: fit-content;
             .aboutsection{
                 width: 90%;
+                flex-direction: column;
                 .aboutdesc{
-                    width: 45%;
+                    width: 100%;
+                    order: 2;
+                    h1{
+                        font-size: 1em;
+                    }
+                    p{
+                        margin-top: 0px;
+                    }
                 }
                 img{
-                    width:50%
+                    width:80%;
+                    align-self: center;
+                    order: 1;
                 }
             }
         }  

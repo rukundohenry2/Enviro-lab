@@ -186,12 +186,22 @@ body .middlepart3 a {
   }
   body .middlepart1 .aboutsection {
     width: 90%;
+    flex-direction: column;
   }
   body .middlepart1 .aboutsection .aboutdesc {
-    width: 45%;
+    width: 100%;
+    order: 2;
+  }
+  body .middlepart1 .aboutsection .aboutdesc h1 {
+    font-size: 1em;
+  }
+  body .middlepart1 .aboutsection .aboutdesc p {
+    margin-top: 0px;
   }
   body .middlepart1 .aboutsection img {
-    width: 50%;
+    width: 80%;
+    align-self: center;
+    order: 1;
   }
   body .middlepart2 {
     height: -webkit-fit-content;
