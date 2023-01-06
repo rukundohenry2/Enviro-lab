@@ -13,6 +13,7 @@ body .middlepart1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 17px;
 }
 body .middlepart1 .aboutsection {
   width: 80%;
@@ -44,7 +45,7 @@ body .middlepart1 .aboutsection .aboutdesc p {
   text-align: justify;
 }
 body .middlepart1 .aboutsection img {
-  width: 45%;
+  width: 35%;
 }
 body .middlepart2 {
   display: flex;
@@ -91,36 +92,48 @@ body .middlepart3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: -webkit-fill-available;
+  width: 100%;
+  height: 80vh;
+  justify-content: space-around;
 }
 body .middlepart3 h1 {
   color: #013E0C;
 }
-body .middlepart3 .service {
-  width: 80%;
+body .middlepart3 .services {
+  width: 60%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
 }
-body .middlepart3 .service .servicetab {
+body .middlepart3 .services .servicetab {
   width: 45%;
   border: #F6931E 3px solid;
   border-radius: 10px;
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
-body .middlepart3 .service .servicetab .servicehead {
+body .middlepart3 .services .servicetab .servicehead {
   color: #013E0C;
   display: flex;
   align-items: center;
+  gap: 20px;
 }
-body .middlepart3 .service .servicetab .servicehead img {
+body .middlepart3 .services .servicetab .servicehead img {
   width: 50px;
   height: 50px;
 }
-body .middlepart3 .service .servicetab .servicedesc {
+body .middlepart3 .services .servicetab .servicehead h3 {
+  text-align: left;
+}
+body .middlepart3 .services .servicetab .servicedesc {
   text-align: justify;
+}
+body .middlepart3 .services .servicetab .servicedesc ul {
+  list-style: roman;
+  padding-left: 15px;
+}
+body .middlepart3 .services .servicetab .servicedesc ul li {
+  padding-left: 0;
 }
 body .middlepart3 a {
   text-decoration: none;
@@ -132,6 +145,22 @@ body .middlepart3 a {
   margin: 10px 10px 10px 10px;
 }
 
+@media (max-width: 1200px) {
+  body .middlepart3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-around;
+  }
+  body .middlepart3 h1 {
+    color: #013E0C;
+  }
+  body .middlepart3 .services {
+    width: 90%;
+  }
+}
 @media (max-width: 992px) {
   body .middlepart1 {
     height: -webkit-fit-content;
@@ -216,11 +245,21 @@ body .middlepart3 a {
     height: fit-content;
     align-self: center;
   }
-  body .middlepart3 .service {
+  body .middlepart3 .services {
     flex-direction: column;
+    align-content: center;
   }
-  body .middlepart3 .service .servicetab {
-    width: 100%;
+  body .middlepart3 .services .servicetab {
+    width: auto;
+    text-align: center;
+  }
+  body .middlepart3 .services .servicetab .servicehead {
+    display: flex;
+    align-content: center;
+  }
+  body .middlepart3 .services .servicetab .servicehead img {
+    width: 50px;
+    height: 50px;
   }
 }
 @media (max-width: 576px) {
@@ -256,8 +295,26 @@ body .middlepart3 a {
   body .middlepart2 .conservesection .conservedesc h1 {
     font-size: 1em;
   }
-  body .middlepart3 .service {
-    width: 90%;
-    align-items: center;
+  body .middlepart3 {
+    width: auto;
   }
-}/*# sourceMappingURL=index.css.map */
+  body .middlepart3 .services {
+    flex-direction: column;
+    align-content: center;
+  }
+  body .middlepart3 .services .servicetab {
+    width: auto;
+    text-align: center;
+  }
+  body .middlepart3 .services .servicetab .servicehead {
+    display: flex;
+    align-content: center;
+  }
+  body .middlepart3 .services .servicetab .servicehead img {
+    width: 50px;
+    height: 50px;
+  }
+  body .middlepart3 .services .servicetab ul {
+    list-style: none;
+  }
+}

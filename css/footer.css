@@ -6,4 +6,136 @@ body .footermenu {
   text-align: center;
   width: -webkit-fill-available;
   color: white;
-}/*# sourceMappingURL=footer.css.map */
+}
+body .footermenu hr {
+  color: white;
+  width: 100%;
+}
+body .footermenu .footertabs {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+body .footermenu .footertabs .newsletter {
+  width: 25%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.816);
+}
+body .footermenu .footertabs .newsletter p {
+  font-size: larger;
+  margin-bottom: 30px;
+}
+body .footermenu .footertabs .newsletter .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body .footermenu .footertabs .newsletter .subscribe input {
+  height: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body .footermenu .footertabs .newsletter .subscribe button {
+  padding: 10px;
+  align-self: center;
+  width: 50%;
+  border-radius: 0;
+  border: 0px red solid;
+}
+body .footermenu .footertabs .reachus {
+  width: 25%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.816);
+}
+body .footermenu .footertabs .reachus p {
+  margin-top: 10px;
+}
+body .footermenu .footertabs .reachus .mainhead {
+  font-size: larger;
+  margin-bottom: 10px;
+}
+body .footermenu .footertabs .reachus .subhead {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .footermenu .footertabs .reachus .general {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+body .footermenu .footertabs .reachus .general img {
+  width: 15px;
+  height: 15px;
+}
+body .footermenu .footertabs .reachus .general p {
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body .footermenu .footertabs .quicklinks {
+  width: 25%;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.816);
+}
+body .footermenu .footertabs .quicklinks .mainhead {
+  font-size: larger;
+  margin-bottom: 10px;
+}
+body .footermenu .footertabs .quicklinks .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  row-gap: 20px;
+}
+body .footermenu .footertabs .quicklinks .links a {
+  text-decoration: none;
+  color: #FFF6EC;
+  padding-left: 20px;
+  font-style: "blackjack";
+  text-align: left;
+}
+body .footermenu .footerinfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+body .footermenu .footerinfo .bottomlinks a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footermenu hr {
+    color: white;
+    width: 100%;
+  }
+  .footermenu .footertabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .footermenu .footertabs .reachus {
+    width: auto;
+  }
+}

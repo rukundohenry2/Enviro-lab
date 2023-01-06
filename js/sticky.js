@@ -19,24 +19,16 @@ function myFunction() {
         document.querySelector('#menustick').classList.add('sticky')
         $('.blankdiv .logo3').css('display','block')
         $('.menubar .logo1').css('display','none')
-        //$('.menubar .menusocial .blankdiv').css('display','none')
         $('.middlepart1').css('height','fit-content')
-
-
-        console.log("henry in the building")
-
     }
     
     
   } else {
-    if ( document.body.clientWidth >=  targetWidth ) { 
+    if ( document.body.clientWidth >=  targetWidth ){ 
         document.querySelector('#menustick').classList.remove('sticky')
-        console.log("henry is really out of the building")
         $('.menubar .logo3').css('display','none')
         $('.menubar .logo1').css('display','block')
         $('.middlepart1').css('height','100vh')
-        //$('.menubar .menusocial .blankdiv').css('display','block')
-        //$('.menubar').css('flex-direction','column')
     }
   }
 }
