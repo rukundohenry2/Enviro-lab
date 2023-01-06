@@ -9,10 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/footer.css">
     <title>Enviro Lab|Home</title>
 </head>
@@ -22,34 +20,16 @@
         <?php include "header.html" ?>
         <div class="aboutsection">
             <div class="aboutdesc">
-                <h1>What we are.</h1>
-                <p>Envirolab Conservation Limited is a biodiversity research company in Uganda with a team of
-                    experts led by Dr. Waswa Sadic Babyesiza, with interests in conservation science, ecology and
-                    biodiversity. Envirolab works on a variety of environmental, ecological, and conservation-
+                <h1>What we can help you with?</h1>
+                <p>Envirolab works on a variety of environmental, ecological, and conservation-
                     related issues and collaborates with numerous organizations worldwide across terrestrial,
                     coastal, and marine ecosystems as well as across spatial scales, from regional (East Africa) to
                     global, in order to help address pressing environmental issues, ecological, sustainability, and
-                    conservation challenges across the globe. Working with local communities and international
-                    partners, we mentor and educate the next generation of conservation scientists and
-                    practitioners in order to improve conservation that benefits communities and livelihoods.</p>
-                <a href="">More</a>
-            </div>
-            <img src="media/vector/imgcollection.png" alt="">
-        </div>
-    </div>
-    <div class="middlepart2">
-        <div class="conservesection">
-            <img class="gengallery" src="media/vector/gallery.png" alt="">
-            <img class="phonegallery" src="media/vector/galleryphone.png" alt="">
-            <div class="conservedesc">
-                <h1>Environmental conservation</h1>
-                <p>Human existence is quite impossible without the presence of a healthy ecosystem. 
-                    Our environment comprises all living and non-living components and their interactions within a natural habitat. 
-                    Environmental conservation has become one of the core issues that need to be addressed to battle climate change and global warming.
-                    For any information needed we shall be ready to help just reach out to us.
+                    conservation challenges across the globe. You can check out our activities here to see which suits
+                    suits your needs and you call us?
                 </p>
-                <!-- <a href="">More</a> -->
             </div>
+            <img src="media/vector/vector2.png" alt="">
         </div>
     </div>
     <div class="middlepart3">
@@ -82,8 +62,31 @@
                     </ul>
                 </div>
             </div>
+            <div class="servicetab">
+                <div class="servicehead">
+                    <h3>Threatened species monitoring including assessments of unpopular taxa like bats and snakes (the two groups are surrounded with myths in Africa which puts them at risk and accorded lower conservation priorities). </h3>
+                    <img src="media/icons/icons8_oak_tree_96px_2.png" alt="">
+                </div>
+                <div class="servicedesc">
+                    <ul>
+                        <li>Assessing local threats to species listed under IUCN threatened species and devising strategies to improve their conservation following species action plans</li>
+                        <li>Sensitization and conservation education to local communities, demystifying myths while emphasizing the roles of bats and snakes in ecosystems</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="servicetab">
+                <div class="servicehead">
+                    <h3>Research clearance </h3>
+                    <img src="media/icons/icons8_oak_tree_96px_2.png" alt="">
+                </div>
+                <div class="servicedesc">
+                    <ul>
+                        <li>Research approval along relevant authorities and ethical committees such as UWA, NFA, UNCST and material transfer agreements (MTA). </li>
+                        <li>Research expedition logistical arrangement and planning.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <a href="">More services</a>
     </div>
     <?php include "footer.html" ?>
     <script src="js/slidingmenu.js"></script>

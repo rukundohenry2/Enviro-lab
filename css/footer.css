@@ -53,6 +53,7 @@ body .footermenu .footertabs .reachus {
   flex-direction: column;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.816);
+  color: white;
 }
 body .footermenu .footertabs .reachus p {
   margin-top: 10px;
