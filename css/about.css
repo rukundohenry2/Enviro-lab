@@ -1,0 +1,236 @@
+body {
+  background-image: url("../media/Background2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+body .middlepart1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+}
+body .middlepart1 .aboutsection {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+body .middlepart1 .aboutsection .aboutdesc {
+  text-align: left;
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  height: 100%;
+}
+body .middlepart1 .aboutsection .aboutdesc h1 {
+  color: white;
+}
+body .middlepart1 .aboutsection .aboutdesc a {
+  border: #013E0C 2px solid;
+  text-decoration: none;
+  border-radius: 10%;
+  padding: 2px 8px 2px 8px;
+  background-color: #013E0C;
+  color: white;
+}
+body .middlepart1 .aboutsection .aboutdesc p {
+  text-align: justify;
+  color: white;
+}
+body .middlepart1 .aboutsection img {
+  width: 35%;
+}
+body .middlepart3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  background-color: white;
+}
+body .middlepart3 h1 {
+  color: #013E0C;
+}
+body .middlepart3 .teammembers {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+body .middlepart3 .teammembers .teammember {
+  width: 45%;
+}
+body .middlepart3 .teammembers .teammember img {
+  border-radius: 50%;
+  width: 100%;
+}
+body .middlepart3 .teammembers .teammember .imgcaption {
+  position: relative;
+  top: -50px;
+  background-color: white;
+  border: #F6931E solid 2px;
+  border-radius: 10px;
+  width: auto;
+}
+body .middlepart3 .teammembers .teammember .imgcaption p {
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+body .middlepart3 .teammembers .teammember .imgcaption .headmember {
+  color: #013E0C;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  body .middlepart3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-around;
+  }
+  body .middlepart3 h1 {
+    color: #013E0C;
+  }
+  body .middlepart3 .services {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  body .middlepart1 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .middlepart2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .middlepart3 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (max-width: 768px) {
+  body .middlepart1 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .middlepart1 .aboutsection {
+    width: 90%;
+    flex-direction: column;
+  }
+  body .middlepart1 .aboutsection .aboutdesc {
+    width: 100%;
+    order: 2;
+  }
+  body .middlepart1 .aboutsection .aboutdesc h1 {
+    font-size: 1em;
+  }
+  body .middlepart1 .aboutsection .aboutdesc p {
+    margin-top: 0px;
+  }
+  body .middlepart1 .aboutsection img {
+    width: 90%;
+    align-self: center;
+    order: 1;
+  }
+  body .middlepart3 .teammembers {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+  body .middlepart3 .teammembers .teammember {
+    width: 100%;
+  }
+  body .middlepart3 .teammembers .teammember img {
+    border-radius: 50%;
+    width: 100%;
+  }
+  body .middlepart3 .teammembers .teammember .imgcaption {
+    position: relative;
+    top: -50px;
+    background-color: white;
+    border: #F6931E solid 2px;
+    border-radius: 10px;
+    width: auto;
+  }
+  body .middlepart3 .teammembers .teammember .imgcaption p {
+    color: black;
+    text-align: center;
+    margin: 0;
+  }
+  body .middlepart3 .teammembers .teammember .imgcaption .headmember {
+    color: #013E0C;
+    font-weight: 600;
+  }
+}
+@media (max-width: 576px) {
+  body .middlepart1 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body .middlepart1 .aboutsection {
+    width: 90%;
+    flex-direction: column;
+  }
+  body .middlepart1 .aboutsection .aboutdesc {
+    width: 100%;
+    order: 2;
+  }
+  body .middlepart1 .aboutsection .aboutdesc h1 {
+    font-size: 1em;
+  }
+  body .middlepart1 .aboutsection .aboutdesc p {
+    margin-top: 0px;
+  }
+  body .middlepart1 .aboutsection img {
+    width: 100%;
+    align-self: center;
+    order: 1;
+  }
+  body .middlepart3 {
+    width: auto;
+  }
+  body .middlepart3 .services {
+    flex-direction: column;
+    align-content: center;
+  }
+  body .middlepart3 .services .servicetab {
+    width: auto;
+    text-align: center;
+  }
+  body .middlepart3 .services .servicetab .servicehead {
+    display: flex;
+    align-content: center;
+  }
+  body .middlepart3 .services .servicetab .servicehead img {
+    width: 50px;
+    height: 50px;
+  }
+  body .middlepart3 .services .servicetab ul {
+    list-style: none;
+  }
+}

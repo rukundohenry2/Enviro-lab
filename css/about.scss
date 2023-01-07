@@ -1,0 +1,252 @@
+$text1color:#013E0C;
+$sectionbackground:#0A170D;
+$pageorange:#F6931E;
+$fontsizegen: 20px;
+body{
+    background-image: url("../media/Background2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    //font-size: $fontsizegen;
+    
+    .middlepart1{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 17px;
+        
+        .aboutsection{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+            .aboutdesc{
+                text-align: left;
+                width: 50%;
+                height: fit-content;
+                height: 100%;
+                h1{
+                    color: white;
+                }
+                a{
+                    border: $text1color 2px solid;
+                    text-decoration: none;
+                    border-radius: 10%;
+                    padding: 2px 8px 2px 8px ;
+                    background-color: $text1color;
+                    color: white;
+                }
+                p{
+                    text-align: justify;
+                    color: white;
+                }
+            }
+            img{
+                width:35%
+            }
+        }
+    }
+    .middlepart3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        background-color: white;
+        h1{
+            color: $text1color;
+        }
+        .teammembers{
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            .teammember{
+                
+                width: 45%;
+                
+                img{
+                    border-radius: 50%;
+                    width: 100%;
+                }
+                .imgcaption{
+                    position: relative;
+                    top: -50px;
+                    background-color: white;
+                    border: $pageorange solid 2px;
+                    border-radius: 10px;
+                    width: auto;
+                    p{
+                        color: black;
+                        text-align: center;
+                        margin: 0;
+                    }
+                    .headmember{
+                        color: $text1color;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    body{
+        
+        .middlepart3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 70vh;
+            justify-content: space-around;
+            h1{
+                color: $text1color;
+            }
+            .services{
+                width: 90%;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    body{
+        .middlepart1{
+            height: fit-content;
+        }
+        .middlepart2{
+            height: fit-content;
+        }
+        .middlepart3{
+            height: fit-content; 
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and below)
+@media (max-width: 768px) {
+    body{
+        .middlepart1{
+            height: fit-content;
+            .aboutsection{
+                width: 90%;
+                flex-direction: column;
+                .aboutdesc{
+                    width: 100%;
+                    order: 2;
+                    h1{
+                        font-size: 1em;
+                    }
+                    p{
+                        margin-top: 0px;
+                    }
+                }
+                img{
+                    width:90%;
+                    align-self: center;
+                    order: 1;
+                }
+            }
+        }  
+        .middlepart3{
+            .teammembers{
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 10px;
+                margin-bottom: 20px;
+                display: flex;
+                .teammember{
+                    width: 100%;
+                    img{
+                        border-radius: 50%;
+                        width: 100%;
+                    }
+                    .imgcaption{
+                        position: relative;
+                        top: -50px;
+                        background-color: white;
+                        border: $pageorange solid 2px;
+                        border-radius: 10px;
+                        width: auto;
+                        p{
+                            color: black;
+                            text-align: center;
+                            margin: 0;
+                        }
+                        .headmember{
+                            color: $text1color;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Small devices (landscape phones, 576px and below)
+@media (max-width: 576px) {
+    body{
+        .middlepart1{
+            height: fit-content;
+            .aboutsection{
+                width: 90%;
+                flex-direction: column;
+                .aboutdesc{
+                    width: 100%;
+                    order: 2;
+                    h1{
+                        font-size: 1em;
+                    }
+                    p{
+                        margin-top: 0px;
+                    }
+                }
+                img{
+                    width:100%;
+                    align-self: center;
+                    order: 1;
+                }
+            }
+        }  
+        
+        .middlepart3{
+            width:auto;
+            .services{
+                
+                flex-direction: column;
+                align-content:center ;
+                .servicetab{
+                    width: auto;
+                    text-align: center;
+                    .servicehead{
+                        display: flex;
+                        align-content: center;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                        
+                    }
+                    ul{
+                        list-style: none;
+                        li{
+                            
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
