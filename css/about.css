@@ -1,5 +1,5 @@
 body {
-  background-image: url("../media/Background2.png");
+  background-image: url("../media/Background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -32,7 +32,7 @@ body .middlepart1 .aboutsection .aboutdesc {
   height: 100%;
 }
 body .middlepart1 .aboutsection .aboutdesc h1 {
-  color: white;
+  color: #013E0C;
 }
 body .middlepart1 .aboutsection .aboutdesc a {
   border: #013E0C 2px solid;
@@ -44,7 +44,7 @@ body .middlepart1 .aboutsection .aboutdesc a {
 }
 body .middlepart1 .aboutsection .aboutdesc p {
   text-align: justify;
-  color: white;
+  color: black;
 }
 body .middlepart1 .aboutsection img {
   width: 35%;

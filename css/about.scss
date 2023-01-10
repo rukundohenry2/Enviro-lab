@@ -3,7 +3,7 @@ $sectionbackground:#0A170D;
 $pageorange:#F6931E;
 $fontsizegen: 20px;
 body{
-    background-image: url("../media/Background2.png");
+    background-image: url("../media/Background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -33,19 +33,19 @@ body{
                 height: fit-content;
                 height: 100%;
                 h1{
-                    color: white;
+                    color:$text1color;
                 }
                 a{
                     border: $text1color 2px solid;
                     text-decoration: none;
                     border-radius: 10%;
                     padding: 2px 8px 2px 8px ;
-                    background-color: $text1color;
+                    background-color:#013E0C;
                     color: white;
                 }
                 p{
                     text-align: justify;
-                    color: white;
+                    color: black;
                 }
             }
             img{

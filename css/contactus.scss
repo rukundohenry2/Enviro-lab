@@ -1,0 +1,338 @@
+$text1color:#013E0C;
+$sectionbackground:#0A170D;
+$pageorange:#F6931E;
+$fontsizegen: 20px;
+body{
+    background-image: url("../media/Background3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    //font-size: $fontsizegen;
+    
+    .middlepart1{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 17px;
+        width: 100%;
+        
+        .aboutsection{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 20px;
+            
+            h1{
+                color: white;
+                
+            }
+            .aboutdesc{
+                text-align: left;
+                width: 50%;
+                height: fit-content;
+                height: 100%;
+                
+                h1{
+                    color:$text1color;
+                }
+                a{
+                    border: $text1color 2px solid;
+                    text-decoration: none;
+                    border-radius: 10%;
+                    padding: 2px 8px 2px 8px ;
+                    background-color:#013E0C;
+                    color: white;
+                }
+                p{
+                    text-align: justify;
+                    color: black;
+                }
+            }
+            img{
+                width:35%
+            }
+        }
+    }
+    .reachdesc{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            color: black;
+            width: 60%;
+            text-align: justify;
+        }
+    }
+    .contactus{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color:#FFF6EC ;
+        .contbox{
+            width: 70%;
+            padding: 20px 20px 20px 20px;
+            display: flex;
+            
+            .contdetails{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .innerdetails{
+                    p{
+                        margin: 0;
+                        width: auto;
+                        margin: 5px;
+                    }
+                    .phead{
+                        font-weight: bold;
+                        margin: 5px;
+                    }
+                    .detailcont{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            width: 15px;
+                            height: 15px;
+                        }
+                        .pnumber{
+                        }
+                    }
+                }
+                
+            }
+            .contform{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                
+                .contactform{
+                    display: flex;
+                    flex-direction: column;
+                    .formcomponent{
+                        border-radius: 0px;
+                        border: rgb(153, 153, 153) solid 1px;
+                        height: 40px;
+                        width: auto;
+                        margin-bottom:30px ;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        
+                        &::placeholder{
+                            font-family: "poppins";
+                        }
+                    }
+                    .submitbutton{
+                        align-self: center;
+                        border-radius: 0px;
+                        border: rgb(153, 153, 153) solid 0px;
+                        background-color: $text1color;
+                        width: 35%;
+                        height: 30px;
+                        color: white;
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .mapouter{
+        background-color: white;
+    }
+}
+
+@media (max-width: 1200px) {
+    body{
+        
+        .middlepart3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 70vh;
+            justify-content: space-around;
+            h1{
+                color: $text1color;
+            }
+            .services{
+                width: 90%;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    body{
+        .middlepart1{
+            height: fit-content;
+        }
+        .middlepart2{
+            height: fit-content;
+        }
+        .middlepart3{
+            height: fit-content; 
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and below)
+@media (max-width: 768px) {
+    body{
+        .middlepart1{
+            .aboutsection{
+                width: 90%;
+                height: 30vh;
+                flex-direction: column;
+                
+            }
+        }  
+        .reachdesc{
+            p{
+                width: 90%;
+            }
+        }
+        .contactus{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            background-color:#FFF6EC ;
+            .contbox{
+                width: 90%;
+                padding: 20px 20px 20px 20px;
+                display: flex;
+                flex-direction: column;
+                
+                
+                .contdetails{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .innerdetails{
+                        p{
+                            margin: 0;
+                            width: auto;
+                            margin: 5px;
+                        }
+                        .phead{
+                            font-weight: bold;
+                            margin: 5px;
+                        }
+                        .detailcont{
+                            display: flex;
+                            align-items: center;
+                            img{
+                                width: 15px;
+                                height: 15px;
+                            }
+                            .pnumber{
+                            }
+                        }
+                    }
+                    
+                }
+                .contform{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .contactform{
+                        display: flex;
+                        flex-direction: column;
+                        .formcomponent{
+                            border-radius: 0px;
+                            border: rgb(153, 153, 153) solid 1px;
+                            height: 40px;
+                            width: auto;
+                            margin-bottom:30px ;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            
+                            &::placeholder{
+                                font-family: "poppins";
+                            }
+                        }
+                        .submitbutton{
+                            align-self: center;
+                            border-radius: 0px;
+                            border: rgb(153, 153, 153) solid 0px;
+                            background-color: $text1color;
+                            width: 35%;
+                            height: 30px;
+                            color: white;
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+// Small devices (landscape phones, 576px and below)
+@media (max-width: 576px) {
+    body{
+        .middlepart1{
+            
+            .aboutsection{
+                width: 90%;
+                flex-direction: column;
+                .aboutdesc{
+                    width: 100%;
+                    order: 2;
+                    h1{
+                        font-size: 1em;
+                    }
+                    p{
+                        margin-top: 0px;
+                    }
+                }
+                img{
+                    width:100%;
+                    align-self: center;
+                    order: 1;
+                }
+            }
+        }  
+        
+        .middlepart3{
+            width:auto;
+            .services{
+                
+                flex-direction: column;
+                align-content:center ;
+                .servicetab{
+                    width: auto;
+                    text-align: center;
+                    .servicehead{
+                        display: flex;
+                        align-content: center;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                        
+                    }
+                    ul{
+                        list-style: none;
+                        li{
+                            
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}

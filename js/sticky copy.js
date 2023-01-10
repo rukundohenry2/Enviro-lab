@@ -21,7 +21,7 @@ function myFunction() {
         document.querySelector('#menustick').classList.add('sticky')
         $('.blankdiv .logo3').css('display','block')
         $('.menubar .logo1').css('display','none')
-        $('.middlepart1').css('height','fit-content')
+        $('.middlepart1').css('height','100vh')
 
         // stickbottom = navbar.offsetHeight
         // console.log(stickbottom)
