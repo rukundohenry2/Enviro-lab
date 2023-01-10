@@ -62,14 +62,14 @@ body .reachdesc {
 }
 body .reachdesc p {
   color: black;
-  width: 60%;
+  width: 70%;
   text-align: justify;
 }
 body .contactus {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: #FFF6EC;
+  background-color: white;
 }
 body .contactus .contbox {
   width: 70%;
@@ -187,7 +187,7 @@ body .mapouter {
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: #FFF6EC;
+    background-color: white;
   }
   body .contactus .contbox {
     width: 90%;
