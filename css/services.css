@@ -21,6 +21,7 @@ body .middlepart1 .aboutsection {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
   margin: 20px;
 }
 body .middlepart1 .aboutsection .aboutdesc {

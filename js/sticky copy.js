@@ -3,7 +3,7 @@ var navbar = document.getElementById("socialmenu");
 var menubar = document.getElementById("menustick");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
-var stickbottom = menubar.offsetHeight+100;
+var stickbottom = menubar.offsetHeight+50;
 console.log(stickbottom)
 //console.log(sticky)
 

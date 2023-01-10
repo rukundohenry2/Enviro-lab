@@ -59,6 +59,7 @@ body .middlepart1 .menubar .menusocial .menuitems .innerclose {
 }
 body .middlepart1 .menubar .menusocial .blankdiv {
   width: 20%;
+  height: 80px;
 }
 body .middlepart1 .menubar .menusocial .blankdiv .logo3 {
   display: none;
