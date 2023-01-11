@@ -1,3 +1,6 @@
+//for mobile view get scroll positin on top
+var prevScrollpos = window.pageYOffset;
+
 // Get the navbar
 var navbar = document.getElementById("socialmenu");
 var menubar = document.getElementById("menustick");
@@ -22,9 +25,6 @@ function myFunction() {
         $('.blankdiv .logo3').css('display','block')
         $('.menubar .logo1').css('display','none')
         $('.middlepart1').css('height','100vh')
-
-        // stickbottom = navbar.offsetHeight
-        // console.log(stickbottom)
         $('.aboutsection').css('margin-top',String(stickbottom)+'px')
     }
     
@@ -37,6 +37,7 @@ function myFunction() {
         $('.middlepart1').css('height','100vh')
         $('.aboutsection').css('margin-top','20px')
     }
+    
   }
 }
 
