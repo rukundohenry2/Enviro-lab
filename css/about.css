@@ -48,6 +48,7 @@ body .middlepart1 .aboutsection .aboutdesc p {
 }
 body .middlepart1 .aboutsection img {
   width: 35%;
+  border: solid 3px #F6931E;
 }
 body .middlepart3 {
   display: flex;
