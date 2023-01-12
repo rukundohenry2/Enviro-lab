@@ -45,7 +45,11 @@ body{
                         margin: 0;
                         &:hover{
                             color: #F6931E;
+                            
                         }
+                    }
+                    .active{
+                        color: rgba(0, 0, 0, 0.5);
                     }
                     .innersocialicons{
                         display: none;

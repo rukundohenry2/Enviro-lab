@@ -42,6 +42,9 @@ body .middlepart1 .menubar .menusocial .menuitems a {
 body .middlepart1 .menubar .menusocial .menuitems a:hover {
   color: #F6931E;
 }
+body .middlepart1 .menubar .menusocial .menuitems .active {
+  color: rgba(0, 0, 0, 0.5);
+}
 body .middlepart1 .menubar .menusocial .menuitems .innersocialicons {
   display: none;
   width: 20%;
