@@ -9,6 +9,7 @@ body .middlepart1 .menubar {
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition: top 0.3s;
 }
 body .middlepart1 .menubar .logo1 {
   width: 10%;

@@ -27,6 +27,29 @@ function myFunction() {
         $('.middlepart1').css('height','100vh')
         $('.aboutsection').css('margin-top',String(stickbottom)+'px')
     }
+    else{
+      var currentScrollPos = window.pageYOffset;
+      // if (prevScrollpos > currentScrollPos) {
+      //     document.getElementById("menustick").style.top = "0"
+      //     document.getElementById("menustick").style.position = "fixed"
+      // } else {
+      //     document.getElementById("menustick").style.top = "-12vh"
+      // }
+      if(currentScrollPos<100){
+        document.getElementById("menustick").style.position = "fixed"
+        document.getElementById("menustick").style.top = "0"
+      }
+      else{
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("menustick").style.position = "fixed"
+          document.getElementById("menustick").style.top = "0"
+          
+        } else {
+            document.getElementById("menustick").style.top = "-12vh"
+        }
+      }
+      prevScrollpos = currentScrollPos
+    }
     
     
   } else {
