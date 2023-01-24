@@ -6,7 +6,7 @@ var navbar = document.getElementById("socialmenu");
 var menubar = document.getElementById("menustick");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
-var stickbottom = menubar.offsetHeight+50;
+var stickbottom = menubar.offsetHeight;
 console.log(stickbottom)
 //console.log(sticky)
 
@@ -24,25 +24,21 @@ function myFunction() {
         document.querySelector('#menustick').classList.add('sticky')
         $('.blankdiv .logo3').css('display','block')
         $('.menubar .logo1').css('display','none')
-        $('.middlepart1').css('height','100vh')
-        $('.aboutsection').css('margin-top',String(stickbottom)+'px')
+        $('.middlepart1').css('height','fit-content')
+        $('.aboutsection').css('margin-top',String(stickbottom+50)+'px')
     }
     else{
       var currentScrollPos = window.pageYOffset;
-      // if (prevScrollpos > currentScrollPos) {
-      //     document.getElementById("menustick").style.top = "0"
-      //     document.getElementById("menustick").style.position = "fixed"
-      // } else {
-      //     document.getElementById("menustick").style.top = "-12vh"
-      // }
       if(currentScrollPos<100){
         document.getElementById("menustick").style.position = "fixed"
         document.getElementById("menustick").style.top = "0"
+        //$('.aboutsection').css('margin-top',String(stickbottom+15)+'px')
       }
       else{
         if (prevScrollpos > currentScrollPos) {
           document.getElementById("menustick").style.position = "fixed"
           document.getElementById("menustick").style.top = "0"
+          //$('.aboutsection').css('margin-top',String(stickbottom+15)+'px')
           
         } else {
             document.getElementById("menustick").style.top = "-12vh"
@@ -51,14 +47,15 @@ function myFunction() {
       prevScrollpos = currentScrollPos
     }
     
-    
   } else {
     if ( document.body.clientWidth >=  targetWidth ){ 
         document.querySelector('#menustick').classList.remove('sticky')
         $('.menubar .logo3').css('display','none')
         $('.menubar .logo1').css('display','block')
         $('.middlepart1').css('height','100vh')
+        $('.aboutsection').css('transition','margin-top 2s')
         $('.aboutsection').css('margin-top','20px')
+        
     }
     
   }

@@ -1,9 +1,12 @@
+//for mobile view get scroll positin on top
+var prevScrollpos = window.pageYOffset;
+
 // Get the navbar
 var navbar = document.getElementById("socialmenu");
 var menubar = document.getElementById("menustick");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
-var stickbottom = menubar.offsetHeight+50;
+var stickbottom = menubar.offsetHeight;
 console.log(stickbottom)
 //console.log(sticky)
 
@@ -25,8 +28,30 @@ function myFunction() {
 
         // stickbottom = navbar.offsetHeight
         // console.log(stickbottom)
-        $('.aboutsection').css('margin-top',String(stickbottom)+'px')
+        $('.aboutsection').css('margin-top',String(stickbottom+50)+'px')
+
+        
     }
+    else{
+      var currentScrollPos = window.pageYOffset;
+      if(currentScrollPos<100){
+        document.getElementById("menustick").style.position = "fixed"
+        document.getElementById("menustick").style.top = "0"
+        $('.aboutsection').css('margin-top',String(stickbottom+15)+'px')
+      }
+      else{
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("menustick").style.position = "fixed"
+          document.getElementById("menustick").style.top = "0"
+          $('.aboutsection').css('margin-top',String(stickbottom+15)+'px')
+          
+        } else {
+            document.getElementById("menustick").style.top = "-12vh"
+        }
+      }
+      prevScrollpos = currentScrollPos
+    }
+    
     
     
   } else {

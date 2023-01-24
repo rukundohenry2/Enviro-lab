@@ -13,7 +13,7 @@ body{
             display: flex;
             align-items: center;
             flex-direction: column;
-            transition: top 0.3s;
+            
             .logo1{
                 width: 10%;
                 padding: 20px;
@@ -21,6 +21,7 @@ body{
             }
             .logo2{
                 display: none;
+                
             }
             &.sticky {
                 position: fixed;
@@ -78,6 +79,7 @@ body{
                         display: none;
                         width: 50px;
                         padding: 10px 0px 10px 10px;
+                        transition: display 3s;
                     }
                 }
                 .socialicons{
